@@ -1,6 +1,7 @@
 const path = require('path');
 
 module.exports = {
+    watch: true,
     entry: {
         core: './src/core.ts',
     },
