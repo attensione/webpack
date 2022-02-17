@@ -5,8 +5,15 @@ module.export = {
         main: path.join(__dirname, '/react.ts'),
     },
     output: {
-        filename: 'react.js',
         path: __dirname,
+        filename: 'bundle.js',
+    },
+    devServer: {
+        static: {
+            directory: path.join(__dirname, 'public'),
+        },
+        compress: true,
+        port: 9000,
     },
     module: {
         rules: [

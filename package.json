@@ -2,7 +2,7 @@
   "name": "webpack",
   "version": "1.0.0",
   "description": "",
-  "main": "react.js",
+  "main": "bundle.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "webpack-dev-server --mode development"
