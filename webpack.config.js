@@ -1,19 +1,21 @@
-const PATH = require('path');
+const path = require('path');
 
-module.export = {
-    entry: PATH.resolve(__dirname, 'src'),
-    output: {
-        path: PATH.resolve(__dirname, 'dist'),
-        filename: '[name].js',
+module.exports = {
+    entry: {
+        core: './src/core.ts',
     },
     module: {
         rules: [{
-            loader: 'ts-loader',
             test: /\.tsx?$/,
+            use: 'ts-loader',
             exclude: /node_modules/,
-        }, ]
+        }, ],
     },
     resolve: {
-        extensions: [".tsx", ".ts", ".js"]
+        extensions: ['.tsx', '.ts', '.js'],
+    },
+    output: {
+        filename: '[name].js',
+        path: path.resolve(__dirname, 'dist'),
     },
 };
