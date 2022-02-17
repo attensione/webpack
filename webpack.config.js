@@ -4,6 +4,10 @@ module.exports = {
     entry: {
         core: './src/core.ts',
     },
+    output: {
+        filename: '[name].js',
+        path: path.resolve(__dirname, 'dist'),
+    },
     module: {
         rules: [{
             test: /\.tsx?$/,
@@ -13,10 +17,6 @@ module.exports = {
     },
     resolve: {
         extensions: ['.tsx', '.ts', '.js'],
-    },
-    output: {
-        filename: '[name].js',
-        path: path.resolve(__dirname, 'dist'),
     },
     devServer: {
         static: {
