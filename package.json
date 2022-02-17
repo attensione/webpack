@@ -2,11 +2,10 @@
   "name": "webpack",
   "version": "1.0.0",
   "description": "",
-  "main": "bundle.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "webpack-dev-server --mode development",
-    "webpack": "webpack --mode development"
+    "webpack": "webpack --mode development",
+    "dev": "webpack-dev-server --mode development"
   },
   "repository": {
     "type": "git",

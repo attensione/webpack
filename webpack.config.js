@@ -1,30 +1,21 @@
-const path = require('path');
+const PATH = require('path');
 
 module.export = {
-    entry: {
-        main: path.join(__dirname, '/react.ts'),
-    },
+    mode: 'development',
+    entry: PATH.resolve(__dirname, 'src'),
     output: {
-        path: path.join(__dirname, '/dist'),
+        path: PATH.resolve(__dirname, 'dist'),
         filename: '[name].js',
     },
     module: {
         rules: [
             {
+                loader: 'ts-loader',   
                 test: /\.tsx?$/,
-                loader: 'ts-loader',
-                exclude: /node_modules/,
-            },
+                exclude: /node_modules/,            },
         ]
     },
     resolve: {
         extensions: [".tsx", ".ts", ".js"]
-    },
-    devServer: {
-        static: {
-            directory: path.join(__dirname, 'public'),
-        },
-        compress: true,
-        port: 9000,
     },
 };
