@@ -1,1 +1,9 @@
+//npm install bootstrap --save-dev
+//@import "bootstrap";
+@import "../../node_modules/bootstrap/scss/bootstrap-grid";
 
+$body-color: red;
+
+body {
+  color: $body-color;
+}
