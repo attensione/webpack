@@ -1,7 +1,7 @@
 # webpack
 # URL: https://github.com/attensione/webpack
 
-## WEBPACK v5 init
+## WEBPACK v5 config
 
 ### WEBPACK init
 
@@ -20,7 +20,3 @@ npm install typescript ts-loader terser-webpack-plugin --save-dev
 ### SASS init
 
 npm install sass-loader sass style-loader css-loader mini-css-extract-plugin css-minimizer-webpack-plugin --save-dev
-
-### BOOTSTRAP init
-
-npm install bootstrap
